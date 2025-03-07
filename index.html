@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Ticket</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind and daisyUi lin -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#1DD100',
+                        'primary-bg': '#FFEEE6',
+                        'header-bg': '#FFF9F4',
+                        'footer-bg': '#0',
+                        'bordercolor': '#E9E9E9',
+
+                    },
+                    fontFamily: {
+                        primary: ["Raleway", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'bg': "url('./images/banner.png')",
+
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-primary max-w-7xl mx-auto">
+    <header class="max-w-6xl mx-auto">
+        <nav class="flex items-center justify-around mx-auto my-5">
+            <!-- text and log  -->
+            <div class="">
+                <h3 class="font-bold text-xl">P-Ticket</h3>
+
+            </div>
+            <!-- navigation  -->
+            <div class="">
+                <ul class="font-medium flex gap-5 text-gray-600">
+                    <li class="hover:font-bold"><a href="">Home</a></li>
+                    <li class="hover:font-bold"><a href="">About</a></li>
+                    <li class="hover:font-bold"><a href="">Destination</a></li>
+                    <li class="hover:font-bold"><a href="">Search</a></li>
+                </ul>
+            </div>
+            <!-- button  -->
+            <div class="">
+                <button
+                    class=" flex gap-2 bg-primary px-4 py-2 rounded-lg border-2 border-primary font-bold bg-opacity-15 text-primary"><img
+                        src="./images/bus-icon.png" alt="">Bus</button>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-6xl mx-auto">
+        <section
+            class="flex my-5 flex-col my-2 items-center bg-bg bg-no-repeat bg-center bg-center rounded-lg relative">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-5xl my-5 text-white text-center font-bold">
+                    End-to-End Travel with <br><span class="text-primary"> P Paribahan</span>
+                </h1>
+                <p class="max-w-lg text-white my-5">Yes, you can run unit tests and view the results directly within the
+                    app. The integrated testing features allow for a streamlined .</p>
+                <div class="flex pb-24 justify-center items-center my-5 ">
+                    <button class="my-5 px-4 py-3 font-medium rounded-lg text-xl bg-primary">Buy Tickets</button>
+                </div>
+                <div class="my-1 absolute -bottom-20">
+                    <!-- button div all  -->
+                    <div class="flex justify-around my-8 gap-5">
+                        <!-- card  -->
+                        <div class="rounded-xl gap-2 border-b-2 border-primary bg-white flex items-center px-4 py-2">
+                            <div class=""><img src="./images/people.png" alt=""></div>
+                            <div class="">
+                                <h3 class="text-3xl font-bold">500K+</h3>
+                                <p class="text-gray-500 my-2">Registered users</p>
+                            </div>
+                        </div>
+                        <!-- card  -->
+                        <div class="rounded-xl gap-2 border-b-2 border-primary bg-white flex items-center px-4 py-2">
+                            <div class=""><img src="./images/ticket-cupon.png" alt=""></div>
+                            <div class="">
+                                <h3 class="text-3xl font-bold">1.7 Lacks</h3>
+                                <p class="text-gray-500 my-2">Tickets Sold</p>
+                            </div>
+                        </div>
+                        <!-- card  -->
+                        <div class="rounded-xl gap-2 border-b-2 border-primary bg-white flex items-center px-4 py-2">
+                            <div class=""><img src="./images/stoppage.png" alt=""></div>
+                            <div class="">
+                                <h3 class="text-3xl font-bold">100K+</h3>
+                                <p class="text-gray-500 my-2">Rental partners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-20">
+            <h3 class="font-bold text-2xl text-center my-5">Best Offers For You</h3>
+            <div class="grid grid-cols-4 gap-6">
+                <!-- first cupon card  -->
+                <div class="col-span-2 bg-[#FFBF0F] rounded-lg flex">
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h3 class="text-2xl font-bold">15% OFF
+                        </h3>
+                        <p class="font-bold my-1">on your next purchase
+                        </p>
+                        <time class="my-2 text-gray-500" datetime="02-02-2026">Use by January 2026</time>
+                    </div>
+                    <div class="w-10 mr-16">
+                        <img class="" src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h3 class="text-3xl font-bold pr-10">NEW 15
+                        </h3>
+                        <p class="font-bold text-gray-500 my-1">Cupon Code
+                        </p>
+                    </div>
+                </div>
+                <!-- first cupon card  -->
+                <div class="col-span-2 bg-[#F78C9C] rounded-lg flex">
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <h3 class="text-2xl font-bold">15% OFF
+                        </h3>
+                        <p class="font-bold my-1">on your next purchase
+                        </p>
+                        <time class="my-2 text-gray-500" datetime="02-02-2026">Use by January 2026</time>
+                    </div>
+                    <div class="w-10 mr-16">
+                        <img class="" src="./images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center">
+                        <h3 class="text-3xl font-bold pr-10">NEW 15
+                        </h3>
+                        <p class="font-bold text-gray-500 my-1">Cupon Code
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- button  -->
+             <div class="flex justify-center items-center my-10"><button class="border-primary border-2 px-4 py-2 rounded-lg text-primary font-bold">See More</button></div>
+        </section>
+        <!-- ticket section  -->
+         <section class="my-6 rounded-t-[40px] border-t-4 border-primary shadow-sm bg-gray-100 w-full">
+            <!-- text content  -->
+             <div class="flex flex-col gap-10 my-5 items-center">
+                <h1 class="text-3xl font-bold text-center my-3">P.H Paribhan</h1>
+                <p class="text-gray-600 max-w-lg text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+             </div>
+         </section>
+    </main>
+</body>
+
+</html>
