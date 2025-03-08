@@ -236,7 +236,8 @@
             </div>
             <div class="max-w-6xl mx-auto my-5 rounded-xl border border-bordercolor   p-3">
                 <!-- select your seat  -->
-                <div class="bg-white grid grid-cols-3 gap-2 mb-5 rounded-xl border border-bordercolor mx-auto">
+                <div id="seat-section"
+                    class="bg-white grid grid-cols-3 gap-2 mb-5 rounded-xl border border-bordercolor mx-auto">
                     <!-- seat info  -->
                     <div class="col-span-2 border-r-2 border-dashed border-primary">
                         <h3 class="ml-3 text-xl font-bold my-2 py-2 border-dashed border-b-2 border-gary-300 mr-12">
@@ -251,40 +252,40 @@
                             </div>
                         </div>
                         <div class="flex justify-end mr-16 my-3">
-                            <button class="bg-gray-300 px-6 py-2 rounded-lg "><img
-                                    src="https://img.icons8.com/ios/30/steering-wheel.png" alt=""></button>
+                            <div class="bg-gray-300 px-6 py-2 rounded-lg "><img
+                                    src="https://img.icons8.com/ios/30/steering-wheel.png" alt=""></div>
                         </div>
                         <div class=" grid grid-cols-2 gap-16 mx-3 mr-12 mb-5 ">
                             <!-- left side seats -->
                             <div class="grid-layout">
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">A</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">A</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">A1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">A2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">B</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">B</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">B1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">B2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">C</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">C</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">C1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">C2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">D</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">D</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">D1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">D2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">E</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">E</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">E1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">E2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">F</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">F</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">F1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">F2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">G</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">G</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">G1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">G2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">H</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">H</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">H1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">H2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">I</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">I</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">I1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">I2</button>
-                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">J</button>
+                                <div class="bg-gray-200  px-6 py-2 rounded-lg ">J</div>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">J1</button>
                                 <button class="bg-gray-200  px-6 py-2 rounded-lg ">J2</button>
 
@@ -317,43 +318,33 @@
                         <!-- table  -->
                         <div class="bg-gray-100 rounded-xl my-3 px-2">
                             <table class="w-full">
-                                <tbody>
+                                <tbody id="table" >
                                     <tr class="border-dashed border-gray-500 border-b-2">
-                                        <th class="relative py-4">Seats <span
+                                        <th class="relative py-4">Seats <span id="total-seats"
                                                 class="text-primary rounded-lg font-bold absolute  text-xl top-1 ">0</span>
                                         </th>
                                         <th class="py-4">Class</th>
                                         <th class="py-4">Amount</th>
                                     </tr>
-                                    <tr class="my-3">
-                                        <td class="text-gray-600 py-4">C2</td>
-                                        <td class="text-gray-600 py-4">Economy</td>
-                                        <td class="text-gray-600 py-4 text-center">550</td>
-                                    </tr>
-                                    <tr class="my-3">
-                                        <td class="text-gray-600 py-4">C2</td>
-                                        <td class="text-gray-600 py-4">Economy</td>
-                                        <td class="text-gray-600 py-4 text-center">550</td>
-                                    </tr>
-                                    <tr class="my-3 py-3 border-dashed border-gray-500 border-t-2">
+                                    <tr id="total-price-tr" class="my-3 py-3 border-dashed border-gray-500 border-t-2">
                                         <td class="font-bold text-gray-600 py-4">Total Price</td>
-                                        <td class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">11010</td>
+                                        <td id="total-amount" class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">000</td>
                                     </tr>
                                     <tr>
                                         <td class="" colspan="3">
                                             <div class="relative w-full max-w-md">
-                                                <input
+                                                <input id="cuppon-apply"
                                                     class="bg-white w-full rounded-lg py-4 pr-16 text-center placeholder:text-gray-500 focus:outline-none"
                                                     type="text" placeholder="Have any Coupon?">
-                                                <button
-                                                    class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-primary px-4 py-2 rounded-lg">Apply</button>
+                                                <div  id="apply-btn"
+                                                    class="cursor-pointer absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-primary px-4 py-2 rounded-lg">Apply</div>
                                             </div>
 
                                         </td>
                                     </tr>
                                     <tr class="my-3 py-3">
-                                        <td class="font-bold text-gray-600 py-4">Total Price</td>
-                                        <td class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">11010</td>
+                                        <td  class="font-bold text-gray-600 py-4">Grand Price</td>
+                                        <td id="grand-price" class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">000</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -378,8 +369,8 @@
                                         placeholder="Enter Your Email" required>
                                 </div>
                                 <div class="my-3">
-                                    <button type="submit"
-                                        class="w-full bg-primary py-3 text-white text-center font-bold rounded-lg ">Next</button>
+                                    <div type="submit"
+                                        class="cursor-pointer w-full bg-primary py-3 text-white text-center font-bold rounded-lg ">Next</div>
                                 </div>
                             </form>
                             <div class="my-3 flex justify-between">
@@ -395,18 +386,22 @@
     </main>
     <footer class="bg-[#0B0D17] text-white grid grid-cols-1 md:grid-cols-2 gap-2 p-10 w-full mt-5">
         <aside class="w-full ">
-    
-          <p class="cursor-pointer text-lg">Download Now <span class="ml-6">Licence</span></p>
-          <p class="text-lg cursor-pointer w-full">Carriar<span class="mx-3">About</span><span class="mx-3">featuers</span><span
-              class="mx-3">Pricing</span><span class="mx-3">Help</span><span class="mx-3">Privicy Policy</span></p>
+
+            <p class="cursor-pointer text-lg">Download Now <span class="ml-6">Licence</span></p>
+            <p class="text-lg cursor-pointer w-full">Carriar<span class="mx-3">About</span><span
+                    class="mx-3">featuers</span><span class="mx-3">Pricing</span><span class="mx-3">Help</span><span
+                    class="mx-3">Privicy Policy</span></p>
         </aside>
         <nav>
-          <h6 class="footer-title text-white">Get The App</h6>
-          <div class="grid  grid-rows-2 gap-4 ">
-            <a><img src="./images/playstore.png" alt="" class=""></a>
-          </div>
+            <h6 class="footer-title text-white">Get The App</h6>
+            <div class="grid  grid-rows-2 gap-4 ">
+                <a><img src="./images/playstore.png" alt="" class=""></a>
+            </div>
         </nav>
-      </footer>
+    </footer>
+
+    <script src="./utilites.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
