@@ -1,6 +1,6 @@
 let total = 0;
 let totalAmount = 0;
-let userInfo=[]
+let userInfo = []
 const seatInformation = []
 const seatSection = document.getElementById("seat-section")
 seatSection.addEventListener("click", event => {
@@ -23,8 +23,8 @@ seatSection.addEventListener("click", event => {
         changeInnerText("total-amount", totalAmount);
         changeInnerText("grand-price", totalAmount);
         accesButton.setAttribute('disabled', true);
-        const leftSeat=getElementByIdText("left-seat");
-        let left=Math.max(0,leftSeat-1)
+        const leftSeat = getElementByIdText("left-seat");
+        let left = Math.max(0, leftSeat - 1)
 
         changeInnerText("left-seat", left);
 
@@ -45,25 +45,52 @@ applyBtn.addEventListener("click", event => {
     }
 });
 document.getElementById("close-card")
-    .addEventListener("click",()=> {
-        const succesCard=document.getElementById("succes-card")
+    .addEventListener("click", () => {
+        const succesCard = document.getElementById("succes-card")
         succesCard.classList.add("hidden")
     })
 document.getElementById("submit-btn")
-.addEventListener("submit",(event)=>{
-    event.preventDefault();
- const passengerName=document.getElementById("passengerName").value;
- const phoneNumber=document.getElementById("phoneNumber").value;
- const emailId=document.getElementById("emailId").value;
- userInfo.push({
-    name:`${passengerName}`,
-    number:`${phoneNumber}`,
-    email:`${emailId}`
- })
-    
+    .addEventListener("submit", (event) => {
+        event.preventDefault();
+        const grandPrice = document.getElementById("grand-price").innerText
+        const totalSeat = document.getElementById("total-seats").innerText;
+        const passengerName = document.getElementById("passengerName").value;
+        const phoneNumber = document.getElementById("phoneNumber").value;
+        const emailId = document.getElementById("emailId").value;
+        userInfo.push({
+            name: `${passengerName}`,
+            number: `${phoneNumber}`,
+            email: `${emailId}`,
+            totalSeat: `${totalSeat}`,
+            price: `${grandPrice}`
 
-    const succesCard=document.getElementById("succes-card")
-    succesCard.classList.remove("hidden")
-    console.log(userInfo);
-    console.log(userInfo[0].name);
-})
+        })
+        const getTbody = document.getElementById("info-table")
+        const createTr = document.createElement("tr")
+        createTr.innerHTML = `
+    <td>${userInfo[0].name}</td>
+    <td>${userInfo[0].number}</td>
+    <td>${userInfo[0].email}</td>
+    <td>${userInfo[0].totalSeat}</td>
+    <td>${userInfo[0].price}</td>
+    `
+        getTbody.appendChild(createTr);
+        const succesCard = document.getElementById("succes-card")
+        succesCard.classList.remove("hidden")
+        // console.log(userInfo);
+        // console.log(userInfo.length);
+        // console.log(userInfo[0].name);
+        // console.log(userInfo[0].phoneNumber);
+
+    })
+document.getElementById("bus")
+    .addEventListener("click", () => {
+        console.log(userInfo);
+        const detailCard = document.getElementById("details-card")
+        detailCard.classList.remove("hidden")
+    });
+document.getElementById("continue")
+    .addEventListener("click", () => {
+        const detailCard = document.getElementById("details-card")
+        detailCard.classList.add("hidden")
+    });
