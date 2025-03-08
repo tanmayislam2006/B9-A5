@@ -38,6 +38,15 @@
             }
         }
     </script>
+    <style>
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 20% 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 12px;
+
+        }
+    </style>
 </head>
 
 <body class="font-primary max-w-7xl mx-auto">
@@ -65,7 +74,7 @@
             </div>
         </nav>
     </header>
-    <main class="max-w-6xl mx-auto">
+    <main class="max-w-7xl mx-auto">
         <section
             class="flex my-5 flex-col my-2 items-center bg-bg bg-no-repeat bg-center bg-center rounded-lg relative">
             <div class="flex flex-col items-center justify-center">
@@ -108,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="my-20">
+        <section class="my-20 max-w-6xl mx-auto">
             <h3 class="font-bold text-2xl text-center my-5">Best Offers For You</h3>
             <div class="grid grid-cols-4 gap-6">
                 <!-- first cupon card  -->
@@ -155,7 +164,7 @@
                     class="border-primary border-2 px-4 py-2 rounded-lg text-primary font-bold">See More</button></div>
         </section>
         <!-- ticket section  -->
-        <section class="my-6 rounded-t-[40px] border-t-4 border-primary shadow-sm bg-gray-100 w-full">
+        <section class="my-6 rounded-t-[40px] border-t-4 border-primary shadow-sm max-w-7xl bg-gray-100 w-full">
             <!-- text content  -->
             <div class="flex flex-col gap-10 my-5 items-center">
                 <h1 class="text-3xl font-bold text-center my-3">P.H Paribhan</h1>
@@ -163,9 +172,9 @@
                     within the app. The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- card info div  -->
-            <div class="rounded-xl bg-white border border-bordercolor flex m-4">
+            <div class="max-w-6xl mx-auto rounded-xl bg-white border border-bordercolor flex m-4">
                 <!-- contain one -->
-                <div class="flex-1 p-3 my-2 ">
+                <div class="flex-1 p-3">
                     <!-- header contetn  -->
                     <div class=" flex justify-between">
                         <!-- text-and logo  -->
@@ -217,7 +226,7 @@
 
                 </div>
                 <!-- contain two  -->
-                <div class="w-16 mr-20"><img src="./images/info-devider.png" alt=""></div>
+                <div class="w-16 mr-20"><img class="" src="./images/info-devider.png" alt=""></div>
                 <!-- contain three  -->
                 <div class="flex flex-col justify-center items-center pr-24">
                     <div class=""><img src="./images/fare.png" alt=""></div>
@@ -225,57 +234,89 @@
                     <p class="my-3 text-gray-600 text-center">Per seat</p>
                 </div>
             </div>
-            <div class="">
+            <div class="max-w-6xl mx-auto my-5 rounded-xl border border-bordercolor   p-3">
                 <!-- select your seat  -->
-                <div class="bg-white flex ">
-                    <!-- table info  -->
-                    <div class="bg-gray-100 border flex-1">
-                        <table>
-                            <tbody>
-                                <tr class="border-dashed border-gray-500 border-b-2">
-                                    <th class="relative py-4">Seats <span
-                                            class="text-primary rounded-lg font-bold absolute  text-xl top-1 ">0</span>
-                                    </th>
-                                    <th class="py-4">Class</th>
-                                    <th class="py-4">Amount</th>
-                                </tr>
-                                <tr class="my-3">
-                                    <td class="text-gray-600 py-4">C2</td>
-                                    <td class="text-gray-600 py-4">Economy</td>
-                                    <td class="text-gray-600 py-4 text-center">550</td>
-                                </tr>
-                                <tr class="my-3">
-                                    <td class="text-gray-600 py-4">C2</td>
-                                    <td class="text-gray-600 py-4">Economy</td>
-                                    <td class="text-gray-600 py-4 text-center">550</td>
-                                </tr>
-                                <tr class="my-3 py-3 border-dashed border-gray-500 border-t-2">
-                                    <td class="font-bold text-gray-600 py-4">Total Price</td>
-                                    <td class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">11010</td>
-                                </tr>
-                                <tr>
-                                    <td class="" colspan="3">
-                                        <div class="relative w-full max-w-md">
-                                            <input
-                                                class="bg-white w-full rounded-lg py-4 pr-16 text-center placeholder:text-gray-500 focus:outline-none"
-                                                type="text" placeholder="Have any Coupon?">
-                                            <button
-                                                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white bg-primary px-4 py-2 rounded-lg">Apply</button>
-                                        </div>
+                <div class="bg-white grid grid-cols-3 gap-2 mb-5 rounded-xl border border-bordercolor mx-auto">
+                    <!-- seat info  -->
+                    <div class="col-span-2 border-r-2 border-dashed border-primary">
+                        <h3 class="ml-3 text-xl font-bold my-2 py-2 border-dashed border-b-2 border-gary-300 mr-12">
+                            Select
+                            Your Seat</h3>
+                        <div class="mr-12 flex justify-between mx-2 border-dashed border-b-2 border-gary-300 py-3">
+                            <div class="flex items-center gap-2"><img src="./images/seat-gray.png" alt="">
+                                <p class="text-gray-600 font-bold">Available</p>
+                            </div>
+                            <div class="flex items-center gap-2"><img src="./images/seat-green-filled.png" alt="">
+                                <p class="text-primary font-bold">Available</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end mr-16 my-3">
+                            <button class="bg-gray-300 px-6 py-2 rounded-lg "><img
+                                    src="https://img.icons8.com/ios/30/steering-wheel.png" alt=""></button>
+                        </div>
+                        <div class=" grid grid-cols-2 gap-16 mx-3 mr-12 mb-5 ">
+                            <!-- left side seats -->
+                            <div class="grid-layout">
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">A</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">A1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">A2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">B</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">B1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">B2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">C</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">C1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">C2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">D</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">D1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">D2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">E</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">E1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">E2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">F</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">F1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">F2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">G</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">G1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">G2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">H</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">H1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">H2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">I</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">I1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">I2</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">J</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">J1</button>
+                                <button class="bg-gray-200  px-6 py-2 rounded-lg ">J2</button>
 
-                                    </td>
-                                </tr>
-                                <tr class="my-3 py-3">
-                                    <td class="font-bold text-gray-600 py-4">Total Price</td>
-                                    <td class="font-bold text-gray-600 py-4 text-right pr-3 " colspan="2">11010</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+                            </div>
+                            <div class="grid grid-cols-2 gap-x-16 gap-y-3">
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">A3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">A4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">B3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">B4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">C3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">C4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">D3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">D4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">E3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">E4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">F3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">F4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">G3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">G4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">H3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">H4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">I3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">I4</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">J3</button>
+                                <button class="bg-gray-200  px-6 py-3 rounded-lg ">J4</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-white">
-                        <div class=" p-5">
-                            <table class="bg-gray-100">
+                    <div class="bg-white p-4">
+                        <!-- table  -->
+                        <div class="bg-gray-100 rounded-xl my-3 px-2">
+                            <table class="w-full">
                                 <tbody>
                                     <tr class="border-dashed border-gray-500 border-b-2">
                                         <th class="relative py-4">Seats <span
@@ -316,6 +357,35 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+                        </div>
+                        <!-- input field area -->
+                        <div class="">
+                            <form action="">
+                                <div class="">
+                                    <h3 class="font-bold text-sm">Passenger Name *</h3><input type="text" name="" id=""
+                                        class="px-3 focus:border focus:border-primary focus:outline-none py-3 rounded-lg my-3 bg-white border border-bordercolor w-full text-gray-600"
+                                        placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold text-sm">Phone Number *</h3><input type="number" name="" id=""
+                                        class="px-3 focus:border focus:border-primary focus:outline-none py-3 rounded-lg my-3 bg-white border border-bordercolor w-full text-gray-600"
+                                        placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="">
+                                    <h3 class="font-bold text-sm">Email ID *</h3><input type="email" name="" id=""
+                                        class="px-3 focus:border focus:border-primary focus:outline-none py-3 rounded-lg my-3 bg-white border border-bordercolor w-full text-gray-600"
+                                        placeholder="Enter Your Email" required>
+                                </div>
+                                <div class="my-3">
+                                    <button type="submit"
+                                        class="w-full bg-primary py-3 text-white text-center font-bold rounded-lg ">Next</button>
+                                </div>
+                            </form>
+                            <div class="my-3 flex justify-between">
+                                <h3 class="text-gray-600 hover:underline cursor-pointer">Terms and Conditions</h3>
+                                <h3 class="text-gray-600 hover:underline cursor-pointer">Cancellation Policy</h3>
+                            </div>
 
                         </div>
                     </div>
