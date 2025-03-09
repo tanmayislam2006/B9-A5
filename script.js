@@ -66,15 +66,18 @@ document.getElementById("submit-btn")
 
         })
         const getTbody = document.getElementById("info-table")
-        const createTr = document.createElement("tr")
-        createTr.innerHTML = `
-    <td>${userInfo[0].name}</td>
-    <td>${userInfo[0].number}</td>
-    <td>${userInfo[0].email}</td>
-    <td>${userInfo[0].totalSeat}</td>
-    <td>${userInfo[0].price}</td>
-    `
-        getTbody.appendChild(createTr);
+        for (const userdetails of userInfo) {
+            
+            const createTr = document.createElement("tr")
+            createTr.innerHTML = `
+        <td>${userdetails.name}</td>
+        <td>${userdetails.number}</td>
+        <td>${userdetails.email}</td>
+        <td>${userdetails.totalSeat}</td>
+        <td>${userdetails.price}</td>
+        `
+            getTbody.appendChild(createTr);
+        }
         const succesCard = document.getElementById("succes-card")
         succesCard.classList.remove("hidden")
         // console.log(userInfo);
